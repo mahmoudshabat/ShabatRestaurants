@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mahmoud Shabat Restaurants</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="google_maps_key">AIzaSyAqMjQwaHaGl3FIPk-f0mWlOXZ0uFzDHWs</string>
+    <string name="locating">Locating....</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string name="res_name">Restaurant Name</string>
+    <string name="description">Description</string>
+    <string name="albums">Albums</string>
+    <string name="tab_to_select">Tab to select</string>
+    <string name="add">Add</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_desc">Enter Description</string>
+    <string name="added_successfully">Your restaurant has been added successfully</string>
+    <string name="failed">Failed , please try again</string>
+    <string name="uplaod_image">Please choose one image at least</string>
+    <string name="name_">Name:</string>
+    <string name="description_">Description:</string>
+    <string name="share_via">Share via</string>
+    <string name="share_format">See the details for %s on Shabat app\n%s</string>
+</resources>

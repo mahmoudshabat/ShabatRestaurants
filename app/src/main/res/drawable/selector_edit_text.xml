@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:color="@color/black"
+        android:drawable="@drawable/grey_with_border_yellow_for_edit_text" />
+
+
+    <item
+        android:state_focused="false"
+        android:color="@color/grey_edit_text"
+        android:drawable="@drawable/grey_with_border_grey_for_edit_text" />
+
+
+</selector>

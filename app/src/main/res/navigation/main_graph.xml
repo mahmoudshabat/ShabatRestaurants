@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.mahmoudshabat.restaurants.fragments.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:popUpTo="@id/main_graph"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mahmoudshabat.restaurants.fragments.HomeFragment"
+        android:label="home_fragment"
+
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_addRestaurantFragment"
+            app:destination="@id/addRestaurantFragment"
+            app:enterAnim="@anim/sb__bottom_in"
+            app:popEnterAnim="@anim/hold"
+            app:popExitAnim="@anim/sb__bottom_out"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantDetailsActivity"
+            app:destination="@id/restaurantDetailsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRestaurantFragment"
+        android:name="com.mahmoudshabat.restaurants.fragments.AddRestaurantFragment"
+        android:label="add_restaurant_fragment"
+        tools:layout="@layout/add_restaurant_fragment" >
+        <argument
+            android:name="lat"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="lng"
+            app:argType="float"
+            android:defaultValue="0.0" />
+    </fragment>
+    <activity
+        android:id="@+id/restaurantDetailsActivity"
+        android:name="com.mahmoudshabat.restaurants.Activites.RestaurantDetailsActivity"
+        android:label="activity_restaurant_details"
+        tools:layout="@layout/activity_restaurant_details" >
+        <argument
+            android:name="restaurant"
+            app:argType="com.mahmoudshabat.restaurants.model.RestaurantsModel" />
+
+    </activity>
+</navigation>
